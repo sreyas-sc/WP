@@ -1,0 +1,183 @@
+/* Theme Activation Box CSS */
+.notice.notice-success.is-dismissible.getting_started {
+    background: #e9f2fb;
+    border: dashed 2px #6754e2;
+    text-align: center;
+    padding: 25px 15em;
+}
+.notice-content h2,
+.wrapper-info h2 {
+    font-size: 25px;
+    color: #2c2c51;
+}
+.notice-content p,
+.wrapper-info p {
+    color: #677294;
+}
+.notice-content .get_btn,
+.theme-offer .button-large {
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 15px;
+    box-shadow: 0 10px 20px 0 rgb(94 44 237 / 20%);
+}
+.notice-content .get_btn:hover,
+.theme-offer .button-large:hover{
+    background: transparent;
+    color: #6754e2 !important;
+    border-color: #5e2ced !important;
+}
+
+/* Demo Importer CSS */
+.wrapper-info {
+    text-align: center;
+    max-width: 650px;
+    margin: 35px auto;
+    background: #e9f2fb;
+    padding: 5em;
+    box-shadow: 0 10px 20px 0 rgb(94 44 237 / 20%);
+}
+span.version {
+    font-size: 15px;
+    font-weight: normal;
+}
+.wrapper-info p{
+    font-size: 15px;
+}
+.theme-offer p {
+    color: red;
+    font-size: 12px;
+    padding: 0 5em;
+    margin: 30px 0;
+}
+.success {
+    color: green;
+    font-size: 15px;
+    margin: auto;
+    width: 50%;
+    padding: 20px 0px;
+}
+
+/*Bundle Notification bar CSS*/
+.ot-bundle:before {
+    content: "";
+    background-image: url(../../assets/images/admin_cart.png);
+    background-size: contain;
+    height: 54px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 9;
+    width: 75px;
+    top: 10px;
+    left: 72px;
+}
+span.ot-bundle-btn:after {
+    content: "";
+    background-image: url(../../assets/images/buy-now.png);
+    background-size: contain;
+    height: 37px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 9;
+    width: 75px;
+    top: -38px;
+    left: 30px;
+}
+.ot-bundle:after {
+    content: "";
+    background-image: url(../../assets/images/admin_banner.png);
+    display: block;
+    background-size: cover;
+    height: 75px;
+    position: relative;
+    width: 100%;
+}
+.notice.notice-warning.is-dismissible{
+    padding: 0px;
+}
+.ot-bundle-content {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    padding: 4px 0px;
+}
+.ot-bundle-content p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+}
+.ot-bundle-content span a {
+    background: #fa412c;
+    padding: 1px 3px;
+    margin-left: 25px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.ot-bundle .notice-dismiss{
+    z-index: 1;
+}
+.ot-bundle .notice-dismiss:before{
+    color: #ffffff;
+}
+span.ot-bundle-btn {
+    position: absolute;
+    right: 50px;
+    bottom: 11px;
+}
+@media screen and (min-width: 425px)  and (max-width: 574px) {
+    .ot-bundle:after{
+        height: 128px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .ot-bundle-content {
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+    }
+    span.ot-bundle-btn {
+        display: block;
+        margin-top: 10px;
+    }
+    .ot-bundle:after{
+        height: 160px;
+    }
+    .ot-bundle:before,span.ot-bundle-btn:after{
+        display: none;
+    }
+    .ot-bundle-content span a{
+        margin-left: 0px;
+    }
+    span.ot-bundle-btn{
+        position: relative;
+        right: 0px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 991px){
+    .ot-bundle:after{
+        height: 88px;
+    }
+    .ot-bundle-content p{
+        width: 68%;
+        margin: 0 auto;
+    }
+    span.ot-bundle-btn{
+        right: 22px;
+    }
+    .ot-bundle:before {
+        left: 24px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .ot-bundle:after{
+        height: 88px;
+    } 
+}

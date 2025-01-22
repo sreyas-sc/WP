@@ -1,0 +1,169 @@
+/*
+Theme Name: Solar Renewable Energy Pro
+Theme URI: https://www.ovationthemes.com/products/solar-wordpress-theme/
+Author: Ovationthemes
+Author URI: https://www.ovationthemes.com/
+Description: Solar Renewable Energy WordPress Theme is specially designed for websites of ecology preserving movement, Green Earth organization, any sort of organic life project, animals saving fundraiser. You can also use it for grocery store, supermarket, organic shop, and online store selling products agriculture, food, gardening, landscaping, lawn, organic and health stores. This premium theme has a beautiful, sophisticated and modern design that you will love. It has responsive layout which fits in all devices. The theme is translation-ready and supports RTL layout. You get custom page layouts to help you design pages as you want.
+Version: 0.0.5
+Requires at least: 5.0
+Tested up to: 5.6.1
+Requires PHP: 5.2.4
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: solar-renewable-energy-pro
+Tags: one-column, right-sidebar, custom-menu, editor-style, featured-images, full-width-template, sticky-post, theme-options, threaded-comments
+
+Solar Renewable Energy Pro WordPress Theme has been created by ovationthemes(ovationthemes.com), 2018.
+Solar Renewable Energy Pro WordPress Theme is released under the terms of GNU GPL
+
+/* Basic Style */
+
+.bypostauthor {
+  font-weight: 600;
+}
+
+/*--------- Site Loader --------------*/
+
+.preloader {
+  background: #f4f9ff;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+  z-index: 99999;
+}
+.load{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:100px;
+  height:100px;
+}
+.load hr{
+  border:0;
+  margin:0;
+  width:40%;
+  height:40%;
+  position:absolute;
+  border-radius:50%;
+  animation:spin 2s ease infinite;
+}
+.load :first-child{background:#16a412;animation-delay:-1.5s}
+.load :nth-child(2){background:#28bc36;animation-delay:-1s}
+.load :nth-child(3){background:#16a412;animation-delay:-0.5s}
+.load :last-child{background:#28bc36}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
+}
+
+/*--------- Woocommerce Section--------- */
+
+.woocommerce ul.products li.product a img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.woocommerce ul.products li.product .star-rating{
+margin: 0 auto .5em;
+color: #f4bc16;
+}
+.woocommerce .products li {
+  text-align: center;
+  border: solid 1px #e6e6e7;
+  border-radius: 10px;
+}
+.woocommerce #sidebar {
+margin-top: 2em;
+}
+a.showcoupon,
+.woocommerce-message::before{
+color: #70bf4a;
+}
+.woocommerce-message {
+border-top-color: #70bf4a;
+}
+.woocommerce ul.products li.product .onsale, .woocommerce span.onsale {
+  background: #fabc16;
+  color: #fff;
+  padding: 0;
+  border-radius: 5px;
+  margin: 0 !important;
+  min-height: 5px;
+  line-height: 26px;
+  min-width: 60px;
+}
+.woocommerce ul.products li.product .onsale{
+  top: 10px !important;
+  right: 10px !important;
+}
+h2.woocommerce-loop-product__title{
+font-size: 18px !important;
+}
+.woocommerce ul.products li.product .price,
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  color: #3fa717 !important;
+  font-size: 22px;
+}
+.woocommerce div.product .product_title,.woocommerce div.product p.price, .woocommerce div.product span.price{
+margin-bottom: 5px;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button,.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+background-image: linear-gradient(to right, #16a412 , #28bc36);  
+color: #fff;
+}
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{
+background: #222222;
+color: #fff;
+}
+.woocommerce .quantity .qty {
+width: 5em;
+padding: 8px 5px;
+border-radius: 0;
+border: solid 1px #222222;
+color: #222222;
+}
+.col-1,.col-2 {
+max-width: 100%;
+}
+nav.woocommerce-MyAccount-navigation ul {
+list-style: none;
+padding: 0;
+}
+nav.woocommerce-MyAccount-navigation ul li {
+background-image: linear-gradient(to right, #16a412 , #28bc36);  
+padding: 12px!important;
+margin-bottom: 10px;
+border-radius: 50px;
+}
+nav.woocommerce-MyAccount-navigation ul li a{
+color: #fff !important;
+font-weight: bold;
+font-style: none !important;
+text-decoration: none;
+}
+.posted_in {
+display: block;
+}
+.woocommerce .woocommerce-ordering select{
+padding: 10px;
+}
+span.woocommerce-input-wrapper{
+width: 100%;
+}
+.woocommerce-product-gallery__image{
+padding: 2px;
+}
+.woocommerce a.checkout-button.button.alt.wc-forward{
+color: #fff !important;
+font-style: none;
+}
+.woocommerce a.checkout-button.button.alt.wc-forward:hover{
+text-decoration: none !important;
+}
